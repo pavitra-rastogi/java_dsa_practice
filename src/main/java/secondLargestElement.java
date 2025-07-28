@@ -1,10 +1,10 @@
 public class secondLargestElement {
-        public int getSecondLargest(int[] arr) {
+        static int getSecondLargest(int[] arr) {
             // code here
             int ans=-1;
             int n=arr.length;
             if(n<2){
-                return ans;
+                ans=-1;
             }
             int first = -1;
             int second = -1;
@@ -19,6 +19,12 @@ public class secondLargestElement {
             }
             ans=second;
             return ans;
+        }
+        public static void main(String[] args){
+            int[] arr={1,2,3,4,5,6,7,8,9};
+
+            System.out.print(getSecondLargest(arr));
+
 
         }
 }
