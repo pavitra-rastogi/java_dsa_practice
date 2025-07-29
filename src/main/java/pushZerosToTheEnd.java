@@ -1,7 +1,7 @@
-import java.util.ArrayList
+import java.util.ArrayList;
 public class pushZerosToTheEnd {
     // User function Template for Java
-        void pushZerosToEnd(int[] arr) {
+    static void pushZerosToEnd(int[] arr) {
             // code here
             int n=arr.length;
             ArrayList<Integer> temp=new ArrayList<>();
@@ -17,6 +17,16 @@ public class pushZerosToTheEnd {
             }
             for(int i=0; i<n; i++){
                 arr[i]=temp.get(i);
+            }
+        }
+        public static void main(String[] args){
+            int[] arr={1,0,3,0,5,0,7,0,9};
+
+
+            pushZerosToEnd(arr);
+
+            for(int i=0; i<arr.length; i++){
+                System.out.print(arr[i]+" ");
             }
         }
 }
