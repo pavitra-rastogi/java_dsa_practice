@@ -1,5 +1,5 @@
 import java.util.LinkedList;
-
+import java.util.Collections;
 class ReverseLinkedList {
     Node head;
 
@@ -7,6 +7,7 @@ class ReverseLinkedList {
     static class Node {
         int data;
         Node next;
+
         Node(int data) {
             this.data = data;
             next = null;
@@ -40,18 +41,17 @@ class ReverseLinkedList {
 
     // Driver code
     public static void main(String[] args) {
-        LinkedList<> list = new LinkedList();
-        list.head = new Node(1);
-        list.head.next = new Node(2);
-        list.head.next.next = new Node(3);
-        list.head.next.next.next = new Node(4);
+        LinkedList<Integer> list = new LinkedList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
 
-        System.out.println("Original Linked List:");
-        list.printList();
+        System.out.println("Original LinkedList: " + list);
 
-        list.reverse();
+        Collections.reverse(list);
 
-        System.out.println("Reversed Linked List:");
-        list.printList();
+        System.out.println("Reversed LinkedList: " + list);
     }
+
 }
