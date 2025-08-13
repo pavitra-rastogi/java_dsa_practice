@@ -24,7 +24,7 @@ public class MergeSort{
             }
         }
         for(int n:merged){
-            System.out.println(n);
+            System.out.print(n+" ");
         }
 
     }
