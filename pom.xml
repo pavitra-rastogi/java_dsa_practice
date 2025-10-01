@@ -28,6 +28,15 @@
     </dependencies>
 
     <build>
+        <pluginManagement>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <version>3.1.2</version> <!-- Use the latest stable version -->
+            </plugin>
+        </pluginManagement>
+
+
         <finalName>${project.artifactId}-${project.version}</finalName>
         <plugins>
             <!-- Maven Compiler Plugin -->
@@ -53,7 +62,7 @@
                     </archive>
                 </configuration>
             </plugin>
-            <!-- Flatten Maven Plugin for CI-friendly versioning -->
+<!--            Flatten Maven Plugin for CI-friendly versioning 
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>flatten-maven-plugin</artifactId>
@@ -79,6 +88,12 @@
                     </execution>
                 </executions>
             </plugin>
+-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+            </plugin>
+
         </plugins>
     </build>
 </project>
