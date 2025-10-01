@@ -6,7 +6,9 @@
 
     <groupId>org.example</groupId>
     <artifactId>java_dsa_practice</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
+    <name>java-app</name>
+    <description>Simple-java-app</description>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
